@@ -4,55 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Responsive Webpage</title>
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <ul class="topnav">
-            <li class="left"><a href="#about">SoundAMP</li>      
-            <li><a href="#news">News</li>
+            <li class="left"><a href="#home">SoundAMP</li>      
+        <li><a href="#news">News</li>
             <li><a href="#contact">Contact</li>
-            <li><a class="active" href="#home">Home</li>
+            <li><i class="fab fa-twitter"></i></li>
             
         </ul>
-    </nav>
+    </nav> -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/soundAMP logo.PNG" alt="Logo" style="width:40px;">
+              </a> 
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">     
+                <li class="active"><a href="#">Sound AMP</a></li>    
+              </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>  
+              <li><a href="#"><i class="fa fa-camera-retro fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest fa-lg"></i></a></li> 
+            </ul>
+          </div><!--/.nav-collapse -->
+       </div>
+     </nav>
     <main>
         <section class = "row">
-            <div class="gallery column" id="highlight">
-                <img src="assets/images/galaxy.jpg" alt="Cinque Terre">
+            <div class="column gallery" id="highlight">
+                <img src="assets/images/pic-top.PNG" alt="Cinque Terre">
             </div>
         </section>
         <section class = "row">
             <div class="gallery column">
                 
-                  <img src="assets/images/Civil-War.jpg" alt="Cinque Terre" height="250">
+                  <img src="assets/images/pic1.PNG" alt="Cinque Terre" height="250">
                 
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">
+                    {date}<br>
+                    <h2>{Heading}</h2>
+                    {hashtags here}<br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing <br>
+                    <button class="see-more">See more...</button>
+                </div>
               </div>
               
               <div class="gallery column">
                 
-                  <img src="assets/images/infinityWar.jpg" alt="Forest"  height="250">
+                  <img src="assets/images/pic2.PNG" alt="Forest"  height="250">
                 
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">{date}<br>
+                    <h2>{Heading}</h2>
+                    {hashtags here}<br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing <br>
+                    <button class="see-more">See more...</button></div>
               </div>
               
               <div class="gallery column">
                 
-                  <img src="assets/images/shang-chi-poster-marvel.jpg" alt="Northern Lights"  height="250">
+                  <img src="assets/images/pic3.PNG" alt="Northern Lights"  height="250">
                 
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">{date}<br>
+                    <h2>{Heading}</h2>
+                    {hashtags here}<br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing <br>
+                    <button class="see-more">See more...</button></div>
               </div>
 
               <div class="gallery column">
                 
-                  <img src="assets/images/endgame.jpg" alt="Northern Lights"  height="250">
+                  <img src="assets/images/pic4.PNG" alt="Northern Lights"  height="250">
                 
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">{date}<br>
+                    <h2>{Heading}</h2>
+                    {hashtags here}<br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing <br>
+                    <button class="see-more">See more...</button></div>
               </div>
               
         </section>
     </main>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </html>
