@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  max-width: 1400px;
+  background-color: #444444;
+}
+main {
+  padding: 5px 50px;
+}
+/* Navigation bar */
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+ul.topnav li {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #76baf8;
+}
+
+ul.topnav li.left {
+  float: left;
+}
+
+/* Movie Cards */
+div.gallery {
+  /* border: 1px solid #ccc; */
+  float: left;
+  width: 180px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+div.desc {
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  /* background-color: white; */
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* Responsive */
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  div.gallery {
+    width: 80%;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  div.gallery {
+    width: 80%;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  div.gallery {
+    width: 40%;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  div.gallery {
+    width: 24%;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  div.gallery {
+    width: 10%;
+  }
+}
