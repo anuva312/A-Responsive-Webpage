@@ -1,3 +1,3 @@
 # A Simple Responsive Webpage
 
-Made to practise HTML and CSS
+A Simple Responsive Webpage made to practise HTML and CSS
