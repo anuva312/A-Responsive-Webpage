@@ -42,12 +42,24 @@ h3 {
 
 div#highlight {
   width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
   padding-top: 25px;
   background-color: #444444;
   flex: 100%;
   max-width: 100%;
   flex-shrink: 3;
   margin-top: 25px;
+}
+
+div.text-on-image {
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  font-size: 50px;
 }
 
 div.desc > p {
@@ -72,7 +84,6 @@ button.see-more {
   border: none;
   display: block;
   margin: auto;
-  /* margin-top: 10px; */
 }
 
 div#left-most {
@@ -86,8 +97,8 @@ div#right-most {
 /* Responsive layout*/
 @media screen and (max-width: 1200px) {
   .column {
-    flex: 43%;
-    max-width: 43%;
+    flex: 50%;
+    max-width: 48%;
   }
   div#highlight {
     width: 100%;
@@ -104,8 +115,8 @@ div#right-most {
 
 @media screen and (max-width: 480px) {
   .column {
-    flex: 85%;
-    max-width: 85%;
+    flex: 100%;
+    max-width: 100%;
   }
   #highlight {
     flex-grow: 1;
