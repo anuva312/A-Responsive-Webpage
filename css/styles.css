@@ -27,7 +27,6 @@ div.gallery {
 div.gallery img {
   width: 100%;
   height: auto;
-  margin: 0 auto;
 }
 
 div.desc {
@@ -43,9 +42,8 @@ h2 {
 
 div#highlight {
   width: 100%;
-  padding: 15px;
+  padding-top: 25px;
   background-color: #444444;
-  margin: 0 auto;
   flex: 100%;
   max-width: 100%;
   flex-shrink: 3;
@@ -55,7 +53,8 @@ div#highlight {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 15px;
+  padding: 0px;
+  margin: 0px;
 }
 
 button.see-more {
@@ -69,6 +68,14 @@ button.see-more {
   margin: 3px;
 }
 
+div#left-most {
+  margin-left: 0px;
+}
+
+div#right-most {
+  margin-right: 0px;
+}
+
 /* Responsive layout*/
 @media screen and (max-width: 1200px) {
   .column {
@@ -78,6 +85,13 @@ button.see-more {
   div#highlight {
     width: 100%;
     flex: 100%;
+  }
+  div#second-right {
+    margin-left: 0px;
+  }
+
+  div#second-left {
+    margin-right: 0px;
   }
 }
 
