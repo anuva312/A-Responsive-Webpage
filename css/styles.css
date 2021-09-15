@@ -121,4 +121,7 @@ div#right-most {
   #highlight {
     flex-grow: 1;
   }
+  div.text-on-image {
+    font-size: 25px;
+  }
 }
