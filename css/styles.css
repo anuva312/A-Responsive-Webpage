@@ -36,7 +36,7 @@ div.desc {
   color: #b0a9d8;
 }
 
-h2 {
+h3 {
   color: #030303;
 }
 
@@ -48,6 +48,11 @@ div#highlight {
   max-width: 100%;
   flex-shrink: 3;
   margin-top: 25px;
+}
+
+div.desc > p {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .row {
@@ -66,9 +71,8 @@ button.see-more {
   text-decoration: none;
   border: none;
   display: block;
-  /* margin: 3px; */
   margin: auto;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 div#left-most {
