@@ -65,7 +65,10 @@ button.see-more {
   color: white;
   text-decoration: none;
   border: none;
-  margin: 3px;
+  display: block;
+  /* margin: 3px; */
+  margin: auto;
+  margin-top: 10px;
 }
 
 div#left-most {
